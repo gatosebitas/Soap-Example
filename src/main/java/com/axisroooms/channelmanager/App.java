@@ -15,7 +15,7 @@ public class App {
             WsdlProject project = new WsdlProject();
 
             // this is locally hosted file
-            String url = "file:/home/tech/Hotel Travel dot com/service.wsdl";
+            String url = "../../../../../../service.wsdl";
             WsdlInterface iface = WsdlInterfaceFactory.importWsdl(project, url, true)[0];
 
             // to print all operations supported by wsdl

@@ -1,0 +1,326 @@
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.HotelTravel.com/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://www.HotelTravel.com/">
+<wsdl:types>
+<s:schema elementFormDefault="qualified" targetNamespace="http://www.HotelTravel.com/">
+<s:element name="UpdateHotelAllotment">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xmlRequest">
+<s:complexType mixed="true">
+<s:sequence>
+<s:any/>
+</s:sequence>
+</s:complexType>
+</s:element>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="UpdateHotelAllotmentResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="UpdateHotelAllotmentResult">
+<s:complexType mixed="true">
+<s:sequence>
+<s:any/>
+</s:sequence>
+</s:complexType>
+</s:element>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="AuthenticationHeader" type="tns:AuthenticationHeader"/>
+<s:complexType name="AuthenticationHeader">
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string"/>
+<s:element minOccurs="0" maxOccurs="1" name="Hotelcode" type="s:string"/>
+</s:sequence>
+<s:anyAttribute/>
+</s:complexType>
+<s:element name="FetchHotelAllotment">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xmlRequest">
+<s:complexType mixed="true">
+<s:sequence>
+<s:any/>
+</s:sequence>
+</s:complexType>
+</s:element>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="FetchHotelAllotmentResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="FetchHotelAllotmentResult">
+<s:complexType mixed="true">
+<s:sequence>
+<s:any/>
+</s:sequence>
+</s:complexType>
+</s:element>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="UpdateHotelPromotion">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xmlRequest">
+<s:complexType mixed="true">
+<s:sequence>
+<s:any/>
+</s:sequence>
+</s:complexType>
+</s:element>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="UpdateHotelPromotionResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="UpdateHotelPromotionResult">
+<s:complexType mixed="true">
+<s:sequence>
+<s:any/>
+</s:sequence>
+</s:complexType>
+</s:element>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="FetchHotelPromotion">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xmlRequest">
+<s:complexType mixed="true">
+<s:sequence>
+<s:any/>
+</s:sequence>
+</s:complexType>
+</s:element>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="FetchHotelPromotionResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="FetchHotelPromotionResult">
+<s:complexType mixed="true">
+<s:sequence>
+<s:any/>
+</s:sequence>
+</s:complexType>
+</s:element>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="FetchRoomAllotment">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="xmlRequest">
+<s:complexType mixed="true">
+<s:sequence>
+<s:any/>
+</s:sequence>
+</s:complexType>
+</s:element>
+</s:sequence>
+</s:complexType>
+</s:element>
+<s:element name="FetchRoomAllotmentResponse">
+<s:complexType>
+<s:sequence>
+<s:element minOccurs="0" maxOccurs="1" name="FetchRoomAllotmentResult">
+<s:complexType mixed="true">
+<s:sequence>
+<s:any/>
+</s:sequence>
+</s:complexType>
+</s:element>
+</s:sequence>
+</s:complexType>
+</s:element>
+</s:schema>
+</wsdl:types>
+<wsdl:message name="UpdateHotelAllotmentSoapIn">
+<wsdl:part name="parameters" element="tns:UpdateHotelAllotment"/>
+</wsdl:message>
+<wsdl:message name="UpdateHotelAllotmentSoapOut">
+<wsdl:part name="parameters" element="tns:UpdateHotelAllotmentResponse"/>
+</wsdl:message>
+<wsdl:message name="UpdateHotelAllotmentAuthenticationHeader">
+<wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader"/>
+</wsdl:message>
+<wsdl:message name="FetchHotelAllotmentSoapIn">
+<wsdl:part name="parameters" element="tns:FetchHotelAllotment"/>
+</wsdl:message>
+<wsdl:message name="FetchHotelAllotmentSoapOut">
+<wsdl:part name="parameters" element="tns:FetchHotelAllotmentResponse"/>
+</wsdl:message>
+<wsdl:message name="FetchHotelAllotmentAuthenticationHeader">
+<wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader"/>
+</wsdl:message>
+<wsdl:message name="UpdateHotelPromotionSoapIn">
+<wsdl:part name="parameters" element="tns:UpdateHotelPromotion"/>
+</wsdl:message>
+<wsdl:message name="UpdateHotelPromotionSoapOut">
+<wsdl:part name="parameters" element="tns:UpdateHotelPromotionResponse"/>
+</wsdl:message>
+<wsdl:message name="UpdateHotelPromotionAuthenticationHeader">
+<wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader"/>
+</wsdl:message>
+<wsdl:message name="FetchHotelPromotionSoapIn">
+<wsdl:part name="parameters" element="tns:FetchHotelPromotion"/>
+</wsdl:message>
+<wsdl:message name="FetchHotelPromotionSoapOut">
+<wsdl:part name="parameters" element="tns:FetchHotelPromotionResponse"/>
+</wsdl:message>
+<wsdl:message name="FetchHotelPromotionAuthenticationHeader">
+<wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader"/>
+</wsdl:message>
+<wsdl:message name="FetchRoomAllotmentSoapIn">
+<wsdl:part name="parameters" element="tns:FetchRoomAllotment"/>
+</wsdl:message>
+<wsdl:message name="FetchRoomAllotmentSoapOut">
+<wsdl:part name="parameters" element="tns:FetchRoomAllotmentResponse"/>
+</wsdl:message>
+<wsdl:message name="FetchRoomAllotmentAuthenticationHeader">
+<wsdl:part name="AuthenticationHeader" element="tns:AuthenticationHeader"/>
+</wsdl:message>
+<wsdl:portType name="HotelAllotmentSoap">
+<wsdl:operation name="UpdateHotelAllotment">
+<wsdl:input message="tns:UpdateHotelAllotmentSoapIn"/>
+<wsdl:output message="tns:UpdateHotelAllotmentSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="FetchHotelAllotment">
+<wsdl:input message="tns:FetchHotelAllotmentSoapIn"/>
+<wsdl:output message="tns:FetchHotelAllotmentSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="UpdateHotelPromotion">
+<wsdl:input message="tns:UpdateHotelPromotionSoapIn"/>
+<wsdl:output message="tns:UpdateHotelPromotionSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="FetchHotelPromotion">
+<wsdl:input message="tns:FetchHotelPromotionSoapIn"/>
+<wsdl:output message="tns:FetchHotelPromotionSoapOut"/>
+</wsdl:operation>
+<wsdl:operation name="FetchRoomAllotment">
+<wsdl:input message="tns:FetchRoomAllotmentSoapIn"/>
+<wsdl:output message="tns:FetchRoomAllotmentSoapOut"/>
+</wsdl:operation>
+</wsdl:portType>
+<wsdl:binding name="HotelAllotmentSoap" type="tns:HotelAllotmentSoap">
+<soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="UpdateHotelAllotment">
+<soap:operation soapAction="http://www.HotelTravel.com/UpdateHotelAllotment" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+<soap:header message="tns:UpdateHotelAllotmentAuthenticationHeader" part="AuthenticationHeader" use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="FetchHotelAllotment">
+<soap:operation soapAction="http://www.HotelTravel.com/FetchHotelAllotment" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+<soap:header message="tns:FetchHotelAllotmentAuthenticationHeader" part="AuthenticationHeader" use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="UpdateHotelPromotion">
+<soap:operation soapAction="http://www.HotelTravel.com/UpdateHotelPromotion" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+<soap:header message="tns:UpdateHotelPromotionAuthenticationHeader" part="AuthenticationHeader" use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="FetchHotelPromotion">
+<soap:operation soapAction="http://www.HotelTravel.com/FetchHotelPromotion" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+<soap:header message="tns:FetchHotelPromotionAuthenticationHeader" part="AuthenticationHeader" use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="FetchRoomAllotment">
+<soap:operation soapAction="http://www.HotelTravel.com/FetchRoomAllotment" style="document"/>
+<wsdl:input>
+<soap:body use="literal"/>
+<soap:header message="tns:FetchRoomAllotmentAuthenticationHeader" part="AuthenticationHeader" use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:binding name="HotelAllotmentSoap12" type="tns:HotelAllotmentSoap">
+<soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+<wsdl:operation name="UpdateHotelAllotment">
+<soap12:operation soapAction="http://www.HotelTravel.com/UpdateHotelAllotment" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+<soap12:header message="tns:UpdateHotelAllotmentAuthenticationHeader" part="AuthenticationHeader" use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="FetchHotelAllotment">
+<soap12:operation soapAction="http://www.HotelTravel.com/FetchHotelAllotment" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+<soap12:header message="tns:FetchHotelAllotmentAuthenticationHeader" part="AuthenticationHeader" use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="UpdateHotelPromotion">
+<soap12:operation soapAction="http://www.HotelTravel.com/UpdateHotelPromotion" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+<soap12:header message="tns:UpdateHotelPromotionAuthenticationHeader" part="AuthenticationHeader" use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="FetchHotelPromotion">
+<soap12:operation soapAction="http://www.HotelTravel.com/FetchHotelPromotion" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+<soap12:header message="tns:FetchHotelPromotionAuthenticationHeader" part="AuthenticationHeader" use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+<wsdl:operation name="FetchRoomAllotment">
+<soap12:operation soapAction="http://www.HotelTravel.com/FetchRoomAllotment" style="document"/>
+<wsdl:input>
+<soap12:body use="literal"/>
+<soap12:header message="tns:FetchRoomAllotmentAuthenticationHeader" part="AuthenticationHeader" use="literal"/>
+</wsdl:input>
+<wsdl:output>
+<soap12:body use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:service name="HotelAllotment">
+<wsdl:port name="HotelAllotmentSoap" binding="tns:HotelAllotmentSoap">
+<soap:address location="https://www.hoteltravel.com/drms/HotelAllotment.asmx"/>
+</wsdl:port>
+<wsdl:port name="HotelAllotmentSoap12" binding="tns:HotelAllotmentSoap12">
+<soap12:address location="https://www.hoteltravel.com/drms/HotelAllotment.asmx"/>
+</wsdl:port>
+</wsdl:service>
+</wsdl:definitions>
